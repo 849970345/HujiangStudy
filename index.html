@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>沪江-专业的互联网学习平台。学习成为更好的自己！</title>    
+    <!-- IE优化 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 引入bootstrap的css文件 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- 引入css文件 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">   
+    <!-- 引入轮播插件 -->
+    <link rel="stylesheet" href="css/swiper/swiper.min.css">
+
+</head>
+<body>
+    <!-- 轮播容器开始 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper" style="left:-275px;">
+            <div class="swiper-slide">
+                <img src="images/bg1.jpg" alt="">
+                <a href="javascript:;">读她的故事</a>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/bg3.jpg" alt="">
+                <a href="javascript:;">读他的故事</a>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/bg2.jpg" alt="">
+                <a href="javascript:;">读她的故事</a>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev" id="prev" style="display:none"></div>
+        <div class="swiper-button-next" id="next" style="display:none"></div>
+        
+    </div>
+    <!-- 轮播容器结束 -->    
+    <div class="close" id="closeSide">
+        <div class="close_tip">关闭后不在显示</div>
+    </div>
+    <!-- 导航条开始 -->
+    <div class="nav-wrap">
+        <div class="navBox"> 
+         <!-- logo -->       
+            <div class="logo">
+                 <a href="#">
+                    <img src="images/logo (1).png" alt="">
+                </a> 
+            </div>
+            <div class="banner">
+                <ul>
+                    <li class="information" id="zixun"><a href="javascript:;">学习资讯</a></li>                   
+                    <li class="tool"><a href="studytool.html">学习工具</a></li>
+                    <li class="mass"><a href="javascript:;">沪江社团</a></li>
+                    <li class="school"><a href="javascript:;">沪江网校</a></li>
+                    <li class="talk"><a href="javascript:;">CCtalk</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" id="searchInput">
+                <div class="search-layer">
+                    <a href="javascript:;" id="btnSearch" class="btn-search">
+                        <i class="icon icon-search"></i>
+                    </a>
+                </div>
+            </div> 
+            <div class="user">                    
+                <div class="login cf">
+                    <a href="javascript:;" id="fastLogin"  title="登录">
+                        <span>登录</span>
+                    </a>
+                    &nbsp;                  
+                    <a href="javascript:;" id="fastRegister"  title="注册">
+                        <span>注册</span>
+                    </a>
+                </div>                    
+            </div>        
+            <div class="sec-nav" id="secNav" style="display:none;">
+                <div class="container">
+                    <ul class="pic-list">
+                        <li>
+                            <a href="#">
+                                <p class="pic">
+                                    <img src="images/nav1.jpg" alt="">
+                                </p>                            
+                                <span class="tit">沪江英语</span>                            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="pic">
+                                    <img src="images/nav2.jpg" alt="">
+                                </p>                            
+                                <span class="tit">沪江日语</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="pic">
+                                    <img src="images/nav3.jpg" alt="">
+                                </p>                            
+                                <span class="tit">沪江韩语</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="pic">
+                                    <img src="images/nav4.jpg" alt="">
+                                </p>                           
+                                <span class="tit">沪江法语</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="pic">
+                                    <img src="images/nav5.jpg" alt="">
+                                </p>                            
+                                <span class="tit">沪江留学</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="pic">
+                                    <img src="images/nav6.jpg" alt="">
+                                </p>                            
+                                <span class="tit">沪江中小幼</span>
+                            </a>
+                        </li>                   
+                     </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 显示轮播动画 -->
+        <div class="open" id="openBtn"></div>         
+    </div>
+    <!-- 导航条结束 --> 
+    <!-- 主内容区开始 -->
+    <div class="main" id="mainTop">
+        <div class="container">            
+            <div class="item1" id="item">
+                <a href="#">
+                    <img src="images/img1.jpg" alt=""> 
+                    <div class="tips">
+                        <div class="text1" id="txt1">
+                            <p class="b-title"> 双十一日语好课提前购 </p>
+                            <p class="b-desc"> 锁定底价，不怕错过！</p>
+                        </div>
+                        <div class="text2" id="txt2">
+                            <p class="c-title"> 双十一日语好课提前购 </p> 
+                            <p class="c-desc"> 人气精品课，预付定金翻倍抵尾款！
+                            <br>
+                            优惠券限量送，报名折上省更多！
+                            <br>
+                            在沪江网校，随时随地学日语，发现新世界~ </p>
+                            <input type="button" value="立即前往" class="btn btn-success">               
+                        </div>
+                        <div class="img2" id="image1">
+                                <img src="images/cat.png" alt="">
+                        </div>
+                    </div>
+                </a>                
+            </div>            
+            <div class="item2" id="item1">
+                <a href="#">                
+                    <img src="images/img3.jpg" alt="">
+                    <div class="tips">
+                        <div class="text1" id="txt3">
+                            <p class="b-title">  日语能力考  </p>
+                            <p class="b-desc">  12月能力考最后冲刺 </p>
+                        </div>
+                        <div class="text2" id="txt4">
+                            <p class="c-title">  备考进行时  </p> 
+                            <p class="c-desc">  12月日语能力考，
+                            <br>                            
+                            最后一个月该做什么？
+                            <br>                            
+                            来这教你沉着应对考试！ ~ </p>
+                            <input type="button" value="马上去看" class="btn btn-success">               
+                        </div>                        
+                    </div>
+                </a> 
+            </div>          
+            <div class="item3" id="item2">
+                <a href="#">
+                    <img src="images/img4.jpg" alt="">
+                    <div class="tips">
+                        <div class="text1" id="txt5">
+                            <p class="b-title">  沪江网校升级  </p>
+                            <p class="b-desc">  学习系统全新上线 </p>
+                        </div>
+                        <div class="text2" id="txt6">
+                            <p class="c-title">  挑战任务模式  </p> 
+                            <p class="c-desc">  学习系统颠覆脑洞想象
+                            <br>                            
+                            课程任务挑战学习耐力
+                            <br>                            
+                            学习报告记录成长轨迹
+                            <br>
+                            知识树苗见证更好自我 </p>
+                            <input type="button" value="马上去看" class="btn btn-success">               
+                        </div>                        
+                    </div> 
+                </a>
+            </div>                                 
+            <div class="item4" id="item3">
+                <a href="#">
+                    <img src="images/img5.jpg" alt="">
+                    <div class="tips">
+                        <div class="text1" id="txt7">
+                            <p class="b-title"> 多种外语练习神器 </p>
+                            <p class="b-desc"> 专为手机学习定制</p>
+                        </div>
+                        <div class="text2" id="txt8">
+                            <p class="c-title"> 轻量级学习工具 </p> 
+                            <p class="c-desc"> Get知识点只需5分钟 学完课程还可评论
+                            <br>
+                            课程配套练习丰富 使用方式简洁易懂 </p>
+                            <input type="button" value="立即前往" class="btn btn-success">               
+                        </div>
+                        <div class="img2" id="image1">
+                            <img src="images/lw.png" alt="">
+                        </div>
+                    </div>
+                </a>   
+            </div>            
+            <div class="item5" id="item4">
+                <a href="#">
+                    <img src="images/img6.jpg" alt="">
+                    <div class="tips">
+                        <div class="text1" id="txt9">
+                            <p class="b-title">  背词类No.1  </p>
+                            <p class="b-desc">  原来背词也可以很开心 </p>
+                        </div>
+                        <div class="text2" id="txt10">
+                            <p class="c-title">  背词必备神器  </p> 
+                            <p class="c-desc">  天天背词，滴水穿石！
+                            <br>                            
+                             巧学活用，乐趣十足！ </p>
+                            <input type="button" value="立即下载" class="btn btn-success">               
+                        </div>                        
+                    </div>
+                </a>
+            </div>            
+            <div class="item6" id="item5">
+                <a href="#">
+                    <img src="images/img7.jpg" alt="">
+                    <div class="tips">
+                        <div class="text1" id="txt11">
+                            <p class="b-title">  我要合作  </p>
+                            <p class="b-desc">  开启在线教育之路 </p>
+                        </div>
+                        <div class="text2" id="txt12">
+                            <p class="c-title">  成就教育梦想  </p> 
+                            <p class="c-desc">  善于教学，乐于分享。
+                            <br>人人都是互联网名师！
+                            <br>入驻沪江，在线授课，
+                            <br>这里有更广阔的舞台。 </p>
+                            <input type="button" value="马上去看" class="btn btn-success">               
+                        </div>                        
+                    </div>
+                </a>
+            </div>            
+        </div>
+            <!-- 内容区下半部分开始 -->
+        <div class="btm_nav">
+            <p class="c-text">
+                <span>
+                    更多沪江学习资源
+                </span>
+            </p>
+            <div class="btm-nav-cont">
+                <div class="btm-nav-block">
+                    <div class="col-md-4 btm-nav-li">
+                        <div class="b-title">
+                            <i class="icon2 icon-search1"></i>
+                            <span class="send">
+                               <a href="javascript:;">中小幼</a>
+                            </span>
+                        </div>
+                        <div class="b-cont">
+                           <a href="javascript:;"><span>青少儿外教</span></a>
+                           <a href="javascript:;"><span>小学语文</span></a>
+                           <a href="javascript:;"><span>小学数学</span></a>
+                           <a href="javascript:;"><span>小学英语</span></a>
+                           <a href="javascript:;"><span>初中语文</span></a>
+                           <a href="javascript:;"><span>高中语文</span></a>
+                           <a href="javascript:;"><span>初中数学</span></a>
+                           <a href="javascript:;"><span>高中英语</span></a>
+                           <a href="javascript:;"><span>中学一对一</span></a>
+                           <a href="javascript:;"><span>高中数理化</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 btm-nav-li">
+                        <div class="b-title">
+                            <i class="icon3 icon-search2"></i>
+                            <span class="send">
+                               <a href="javascript:;">英语</a>
+                            </span>
+                        </div>
+                        <div class="b-cont">
+                            <a href="javascript:;"><span>听力</span></a>
+                            <a href="javascript:;"><span>口语</span></a>
+                            <a href="javascript:;"><span>零基础</span></a>
+                            <a href="javascript:;"><span>双语阅读</span></a>
+                            <a href="javascript:;"><span>四六级</span></a>
+                            <a href="javascript:;"><span>词汇</span></a>
+                            <a href="javascript:;"><span>新概念</span></a>
+                            <a href="javascript:;"><span>商务英语</span></a>
+                            <a href="javascript:;"><span>资源大全</span></a>
+                            <a href="javascript:;"><span>四级成绩</span></a>
+                            <a href="javascript:;"><span>六级成绩</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 btm-nav-li">
+                        <div class="b-title">
+                            <i class="icon4 icon-search3"></i>
+                            <span class="send">
+                               <a href="javascript:;">日语</a>
+                            </span>
+                        </div>
+                        <div class="b-cont">
+                            <a href="javascript:;"><span>五十音图</span></a>
+                            <a href="javascript:;"><span>入门</span></a>
+                            <a href="javascript:;"><span>能力考</span></a>
+                            <a href="javascript:;"><span>口语</span></a>
+                            <a href="javascript:;"><span>留学</span></a>
+                            <a href="javascript:;"><span>日剧</span></a>
+                            <a href="javascript:;"><span>动漫</span></a>
+                            <a href="javascript:;"><span>旅游</span></a>
+                            <a href="javascript:;"><span>资源</span></a>                           
+                        </div>
+                    </div>
+                    <div class="col-md-4 btm-nav-li">
+                        <div class="b-title">
+                            <i class="icon5 icon-search4"></i>
+                            <span class="send">
+                               <a href="javascript:;">韩语</a>
+                            </span>
+                        </div>
+                        <div class="b-cont">
+                            <a href="javascript:;"><span>零基础</span></a>
+                            <a href="javascript:;"><span>考试</span></a>
+                            <a href="javascript:;"><span>韩剧</span></a>
+                            <a href="javascript:;"><span>综艺</span></a>
+                            <a href="javascript:;"><span>留学</span></a>
+                            <a href="javascript:;"><span>资源</span></a>
+                            <a href="javascript:;"><span>文化</span></a>
+                            <a href="javascript:;"><span>旅游</span></a>
+                            <a href="javascript:;"><span>时尚</span></a>                           
+                        </div>
+                    </div>
+                    <div class="col-md-4 btm-nav-li">
+                        <div class="b-title">
+                            <i class="icon6 icon-search5"></i>
+                            <span class="send">
+                               <a href="javascript:;">小语种</a>
+                            </span>
+                        </div>
+                        <div class="b-cont">
+                            <a href="javascript:;"><span>法语</span></a>
+                            <a href="javascript:;"><span>德语</span></a>
+                            <a href="javascript:;"><span>西语</span></a>
+                            <a href="javascript:;"><span>泰语</span></a>
+                            <a href="javascript:;"><span>俄语</span></a>
+                            <a href="javascript:;"><span>意大利语</span></a>
+                            <a href="javascript:;"><span>对外汉语</span></a>
+                            <a href="javascript:;"><span>其他语种</span></a>                                       
+                        </div>
+                    </div>
+                    <div class="col-md-4 btm-nav-li">
+                        <div class="b-title">
+                            <i class="icon7 icon-search6"></i>
+                            <span class="send">
+                               <a href="javascript:;">留学</a> · <a href="javascript:;">考研</a>
+                            </span>
+                        </div>
+                        <div class="b-cont">
+                            <a href="javascript:;"><span>雅思</span></a>
+                            <a href="javascript:;"><span>托福</span></a>
+                            <a href="javascript:;"><span>SAT</span></a>
+                            <a href="javascript:;"><span>GRE</span></a>
+                            <a href="javascript:;"><span>GMAT</span></a>
+                            <a href="javascript:;"><span>考研英语</span></a>
+                            <a href="javascript:;"><span>考研政治</span></a>
+                            <a href="javascript:;"><span>考研数学</span></a>
+                            <a href="javascript:;"><span>考研专业课</span></a>                                       
+                        </div>
+                    </div>
+                    <div class="col-md-4 btm-nav-li">
+                        <div class="b-title">
+                            <i class="icon8 icon-search7"></i>
+                            <span class="send">
+                               <a href="javascript:;">财会</a>
+                            </span>
+                        </div>
+                        <div class="b-cont">
+                            <a href="javascript:;"><span>会计从业</span></a>
+                            <a href="javascript:;"><span>注册会计师</span></a>
+                            <a href="javascript:;"><span>投资理财</span></a>
+                            <a href="javascript:;"><span>ACCA</span></a>
+                            <a href="javascript:;"><span>CFA</span></a>
+                            <a href="javascript:;"><span>CMA</span></a>
+                            <a href="javascript:;"><span>职称考试</span></a>
+                            <a href="javascript:;"><span>财经学习圈</span></a>
+                            <a href="javascript:;"><span>备考资料</span></a>                                       
+                        </div>
+                    </div>
+                    <div class="col-md-4 btm-nav-li">
+                        <div class="b-title">
+                            <i class="icon9 icon-search8"></i>
+                            <span class="send">
+                               <a href="javascript:;">职场</a>
+                            </span>
+                        </div>
+                        <div class="b-cont">
+                            <a href="javascript:;"><span>电商创业</span></a>
+                            <a href="javascript:;"><span>求职面试</span></a>
+                            <a href="javascript:;"><span>职场技能</span></a>
+                            <a href="javascript:;"><span>Office</span></a>
+                            <a href="javascript:;"><span>UI设计</span></a>
+                            <a href="javascript:;"><span>自我提升</span></a>
+                            <a href="javascript:;"><span>影视包装</span></a>
+                            <a href="javascript:;"><span>职业交流</span></a>
+                            <a href="javascript:;"><span>微软认证</span></a>                                       
+                        </div>
+                    </div>
+                    <div class="col-md-4 btm-nav-li">
+                        <div class="b-title">
+                            <i class="icon10 icon-search9"></i>
+                            <span class="send">
+                               <a href="javascript:;">兴趣</a>
+                            </span>
+                        </div>
+                        <div class="b-cont">
+                            <a href="javascript:;"><span>心理</span></a>
+                            <a href="javascript:;"><span>翻译</span></a>
+                            <a href="javascript:;"><span>读书会</span></a>
+                            <a href="javascript:;"><span>摄影</span></a>
+                            <a href="javascript:;"><span>音乐美术</span></a>
+                            <a href="javascript:;"><span>美好生活</span></a>
+                            <a href="javascript:;"><span>绘画技巧</span></a>
+                            <a href="javascript:;"><span>动漫社</span></a>
+                            <a href="javascript:;"><span>美妆社</span></a>                                       
+                        </div>
+                    </div>
+                </div> 
+            </div>            
+        </div>
+        <!-- 内容区下半部分结束 -->
+    </div>
+    <!-- 主内容区结束 -->
+    <!-- 网页底部开始 -->
+    <div class="footer">
+        <div class="container">            
+            <div class="col-md-3 foot-li">
+                <div class="c-title">
+                    <a href="#">关于沪江 </a>                   
+                </div>
+            </div>
+             <div class="col-md-3 foot-li">
+                <div class="c-title">
+                    <a href="#">新手指南 </a>                   
+                </div>
+            </div>
+             <div class="col-md-3 foot-li">
+                <div class="c-title">
+                    <a href="#">加入沪江 </a>                   
+                </div>
+            </div>
+             <div class="col-md-3 foot-li">
+                <div class="c-title">
+                    <a href="#">客服热线 </a>
+                    <p>4008-220-220</p>                  
+                </div>
+            </div>                       
+        </div>    
+        <div class="copy">
+            <p>
+                <span>
+                    沪B2-20110096©2006&nbsp;沪江教育科技（上海）股份有限公司法律声明|联系我们|站点地图
+                </span>
+            </p>
+        </div> 
+    </div>   
+    <!-- 网页底部结束 -->       
+    <!-- 回到顶端 -->
+    <div class="back" id="back">
+        <div class="backDiv" name="backShow">
+            <img src="images/fixed-1.png" alt="">
+
+        </div>        
+        <div class="backDiv">
+            <img src="images/fixed-2.png" alt="">
+        </div>
+
+        <div class="backDiv" name="backShow">
+            <img src="images/fixed-3.png" alt="">
+        </div>
+        <div class="backDiv2" name="backShow1">
+            <img src="images/weixin_qr.png" alt="">
+        </div>
+        <div class="backDiv" >
+            <img src="images/fixed-4.png" alt="">
+        </div>
+    </div>
+    <!-- 隐藏部分 -->
+    <div class="hide">  
+        
+    </div>
+    <!-- 引入jquery的js文件 -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+     <!-- 引入bootstrap的js文件 -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- 引入js文件 -->
+    <script type="text/javascript" src="js/script.js"></script> 
+    <!-- 引入轮播插件 -->
+    <script src="js/swiper/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
